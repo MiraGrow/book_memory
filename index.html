@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>독서 기록 서비스</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>📖 나의 독서 기록</h1>
+  </header>
+
+  <main>
+    <!-- 책 등록 -->
+    <section id="book-register">
+      <h2>책 등록</h2>
+      <input type="text" id="book-title" placeholder="책 제목 입력">
+      <input type="number" id="book-pages" placeholder="총 페이지 수 입력">
+      <button id="add-book">등록하기</button>
+      <ul id="book-list"></ul>
+    </section>
+
+    <!-- 오늘의 소감 -->
+    <section id="daily-note">
+      <h2>오늘의 소감</h2>
+      <select id="select-book"></select>
+      <div class="page-inputs">
+        <input type="number" id="page-start" placeholder="시작 페이지">
+        <input type="number" id="page-end" placeholder="끝 페이지">
+      </div>
+      <textarea id="note-content" placeholder="기억에 남는 내용 작성"></textarea>
+      <button id="save-note">저장하기</button>
+      <div id="note-list"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>✨ 독서 경험을 기록하고 정리하세요 ✨</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
