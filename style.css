@@ -1,0 +1,90 @@
+/* 전체 스타일 */
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: url('https://mblogthumb-phinf.pstatic.net/20151231_151/huchi0070_1451490470539rYJRA_JPEG/attachImage_90199478.jpeg?type=w800') no-repeat center center fixed;
+  background-size: cover;
+  color: #000;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* 헤더 */
+header {
+  text-align: center;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(8px);
+  border-bottom: 2px solid rgba(255,255,255,0.3);
+}
+
+/* 메인 */
+main {
+  flex: 1;
+  padding: 20px;
+}
+
+section {
+  margin-bottom: 40px;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+}
+
+/* 입력창 & 버튼 */
+input, textarea, select, button {
+  width: 100%;
+  margin: 8px 0;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1em;
+}
+
+input, textarea, select {
+  background: rgba(255,255,255,0.85);
+  color: #333;
+}
+
+button {
+  background: linear-gradient(135deg, #ff9a9e, #a18cd1);
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+/* 기록 목록 */
+#book-list li, #note-list div {
+  background: rgba(255,255,255,0.25);
+  backdrop-filter: blur(6px);
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 8px;
+}
+
+/* 푸터 */
+footer {
+  text-align: center;
+  padding: 15px;
+  background: rgba(255, 255, 255, 0.15);
+  border-top: 2px solid rgba(255,255,255,0.3);
+}
+
+/* 반응형 */
+@media (max-width: 600px) {
+  h1, h2 {
+    font-size: 1.2em;
+  }
+  input, textarea, select, button {
+    font-size: 0.9em;
+  }
+}
